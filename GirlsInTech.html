@@ -11,13 +11,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
-    
 
-    .grid-diamond {
-      display: flex; 
-      justify-content: center; 
-      align-items: center;
-    }
+.video-section {
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers video horizontally */
+}
+
+.video-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.autoplay-video {
+  width: 90%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto; /* Ensures additional centering */
+}
+
 
   /* Your existing CSS (as provided) */
 .diamond {
@@ -193,6 +210,28 @@
     </section>
 
 <section >
+
+<!-- LOCAL VIDEO SECTION -->
+<section class="video-section" style="padding: 40px 0; text-align: center;">
+  <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 20px;">
+    Empowering Girls in Tech
+  </h2>
+
+  <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    controls 
+    style="width: 90%; max-width: 900px; border-radius: 15px;">
+    
+    <source src="\src\Icons\Hey You - Copy.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+
+
     <div class="grid 
                 grid-cols-1        <!-- Default (mobile-first): 1 column -->
                 sm:grid-cols-2     <!-- From small screens (sm) and up: 2 columns -->
